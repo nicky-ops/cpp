@@ -1,12 +1,13 @@
 #include <iostream>
 
 int main() {
-	int m, n, sum;
-	std::cout << "Enter first number: ";
-	std::cin >> m;
-	std::cout << "Enter the second number: ";
-	std::cin >> n;
-	sum = m + n;
-	std::cout << sum;
-    return 0;
+	char name, age;
+
+	std::cout << "Enter your name: ";
+	std::cin >> name;
+	std::cout << "Enter your age: ";
+	std::cin >> age;
+	age += 5;
+	std::cout << "Hello" << name << "in 5 years will be" << age <<  ".\n";
+	return 0;
 }
