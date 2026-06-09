@@ -2,6 +2,7 @@
 
 int main()
 {
-    std::string s = "Goodbye, cruel world!";
-    std::cout<<s<<'\n'; 
+    char x = 120;
+    int y = 120;
+    std::cout<<"120 as an integer is: "<<y<<" Whereas 120 as a character is: "<<x<<'\n'; 
 }
