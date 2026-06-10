@@ -1,1 +1,1 @@
-g++ -std=c++20 -fmodules-ts -Wall example4.cpp -o example4
+g++ -std=c++20 -fmodules-ts -Wall example3.cpp -o example3
