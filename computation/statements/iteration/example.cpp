@@ -3,11 +3,19 @@
 
 
 
+// int main()
+// {
+//     int i = 0;
+//     while (i<100) {
+//         std::cout<<i<<'\t'<<i * i<<'\n';
+//         ++i;
+//     }
+// }
+
+
+// Using for statement
 int main()
 {
-    int i = 0;
-    while (i<100) {
-        std::cout<<i<<'\t'<<i * i<<'\n';
-        ++i;
-    }
+    for (int i=0; i<100; ++i)
+        std::cout<<i<<'\t'<<i*i<<'\n';
 }
