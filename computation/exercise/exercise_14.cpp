@@ -1,18 +1,37 @@
 #include <iostream>
+#include <vector>
+
 
 
 int main()
 {
-    int n = 0;
+    unsigned n = 0;
     std::cout<<"Enter the number: \n";
     std::cin>>n;
+    std::vector<int> primes = {2};
+    int current_number = 3;
 
-    for (int i = 2; i <= n; i++)
+    while (primes.size() < n)
     {
-        if (i % n != 0)
+        bool is_prime = true;
+
+        for (int p: primes)
         {
-            std::cout<<i<<" ";
+            if (current_number % p == 0)
+            {
+                is_prime = false;
+                break;
+            }
+
         }
+        if (is_prime == true) primes.push_back(current_number);
+
+        current_number++;
+        
+    }
+    for (int number: primes)
+    {
+        std::cout<<number<<" ";
     }
     std::cout<<"\n";
 }
